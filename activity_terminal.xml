@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terminalContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <!-- Header estilo Termux -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="root@hacker-system"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~/"
+            android:textColor="#00AA00"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Terminal Output -->
+    <ScrollView
+        android:id="@+id/terminalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:padding="8dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/terminalOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="2dp"
+            android:text="Iniciando terminal..." />
+
+    </ScrollView>
+
+    <!-- Command Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="root@hacker-system:~$"
+            android:textColor="#00FF00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/commandInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textColor="#00FF00"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:hint="Escribe un comando..."
+            android:textColorHint="#00AA00" />
+
+    </LinearLayout>
+
+    <!-- Quick Actions Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#002200"
+        android:padding="4dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="❓ HELP"
+            android:textColor="#000000"
+            android:background="#00FF00"
+            android:layout_margin="2dp"
+            android:textSize="10sp"
+            android:onClick="onHelpClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="🎮 HACK"
+            android:textColor="#000000"
+            android:background="#00AAFF"
+            android:layout_margin="2dp"
+            android:textSize="10sp"
+            android:onClick="onHackClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="💰 STATUS"
+            android:textColor="#000000"
+            android:background="#FF9900"
+            android:layout_margin="2dp"
+            android:textSize="10sp"
+            android:onClick="onStatusClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="🛠️ TOOLS"
+            android:textColor="#000000"
+            android:background="#FF4444"
+            android:layout_margin="2dp"
+            android:textSize="10sp"
+            android:onClick="onToolsClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="🗑️ CLEAR"
+            android:textColor="#000000"
+            android:background="#666666"
+            android:layout_margin="2dp"
+            android:textSize="10sp"
+            android:onClick="onClearClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

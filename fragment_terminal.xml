@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- ENCABEZADO MEJORADO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#001100">
+
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="HACKER SYSTEM v8.0"
+    android:textColor="#00FF00"
+    android:textSize="16sp"
+    android:gravity="center"
+    android:padding="8dp"/>
+
+        <!-- Barra de Estado Compacta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/estadoJuego"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🟢 CONECTADO"
+                android:textColor="#00FF00"
+                android:textSize="10sp"
+                android:gravity="start"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="[          ] 0%"
+                android:textColor="#00FF00"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/horaActual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:00:00"
+                android:textColor="#00FF00"
+                android:textSize="10sp"
+                android:gravity="end"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Información del Nivel -->
+        <TextView
+            android:id="@+id/desafioEspecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#002200"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="MODO: CONTRASEÑA | DIF: 1"/>
+
+    </LinearLayout>
+
+    <!-- Terminal de Juego -->
+    <ScrollView
+        android:id="@+id/terminalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#001100"
+        android:layout_margin="8dp"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/terminalOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:text="> INICIANDO SECUENCIA DE HACKEO...\n> SISTEMA OPERATIVO: HACKER v7.0\n> CARGANDO MÓDULOS..."/>
+
+    </ScrollView>
+
+    <!-- Power-ups Compactos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/powerupTiempo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="⏰ +15s"
+            android:textColor="#000000"
+            android:background="#FFFF00"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/powerupPista"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="🔍 PISTA"
+            android:textColor="#000000"
+            android:background="#00FFFF"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/powerupIntento"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="💝 +1 VIDA"
+            android:textColor="#000000"
+            android:background="#FF69B4"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Estadísticas en Tiempo Real -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="#002200"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/levelText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NIVEL: 1/5"
+            android:textColor="#00FF00"
+            android:textSize="11sp"
+            android:gravity="center"/>
+
+        <TextView
+    android:id="@+id/scoreText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="DINERO: $0"
+    android:textColor="#00FF00"
+    android:textSize="11sp"
+    android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏳ 30s"
+            android:textColor="#00FF00"
+            android:textSize="11sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/comboText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="COMBO: x1"
+            android:textColor="#00FF00"
+            android:textSize="11sp"
+            android:gravity="center"/>
+
+      <TextView
+    android:id="@+id/bonusText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="BONUS: $0"
+    android:textColor="#00FF00"
+    android:textSize="11sp"
+    android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/attemptsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="INTENTOS: 3"
+            android:textColor="#00FF00"
+            android:textSize="11sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- TECLADO SMARTPHONE PROFESIONAL -->
+    <LinearLayout
+        android:id="@+id/tecladoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="#001100"
+        android:padding="3dp">
+
+        <!-- Display del Comando -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/comandoDisplay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="#002200"
+                android:textColor="#00FF00"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:text="> _"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="⏎ ENVIAR"
+                android:textColor="#000000"
+                android:background="#00FF00"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:onClick="ejecutarComando"/>
+
+        </LinearLayout>
+
+        <!-- Fila 1: Q W E R T Y U I O P -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="Q" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraQ"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="W" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraW"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="E" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraE"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="R" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraR"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="T" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraT"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="Y" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraY"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="U" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraU"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="I" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraI"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="O" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraO"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="P" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraP"/>
+
+        </LinearLayout>
+
+        <!-- Fila 2: A S D F G H J K L ⌫ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="A" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraA"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="S" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraS"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="D" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraD"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="F" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraF"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="G" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraG"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="H" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraH"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="J" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraJ"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="K" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraK"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="L" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraL"/>
+            <Button android:id="@+id/btnBorrar" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="⌫" android:textColor="#FFFFFF" android:background="#FF0000" android:layout_margin="1dp" android:textSize="14sp" android:onClick="borrarTexto"/>
+
+        </LinearLayout>
+
+        <!-- Fila 3: 🔄 Z X C V B N M 🔊 ⏎ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:id="@+id/btnReiniciar" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🔄" android:textColor="#00FF00" android:background="#003300" android:layout_margin="1dp" android:textSize="14sp" android:onClick="reiniciarJuegoDesdeTeclado"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="Z" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraZ"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="X" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraX"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="C" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraC"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="V" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraV"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="B" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraB"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="N" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraN"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="M" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="letraM"/>
+            <Button android:id="@+id/btnSonido" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🔊" android:textColor="#00FF00" android:background="#003300" android:layout_margin="1dp" android:textSize="14sp" android:onClick="toggleSonido"/>
+            <Button android:id="@+id/btnEnviarFila" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="⏎" android:textColor="#000000" android:background="#00FF00" android:layout_margin="1dp" android:textSize="14sp" android:onClick="ejecutarComando"/>
+
+        </LinearLayout>
+
+        <!-- Fila 4: Números 1-0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="1" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero1"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="2" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero2"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="3" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero3"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="4" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero4"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="5" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero5"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="6" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero6"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="7" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero7"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="8" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero8"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="9" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero9"/>
+            <Button android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="0" android:textColor="#00FF00" android:background="#002200" android:layout_margin="1dp" android:textSize="12sp" android:onClick="numero0"/>
+
+        </LinearLayout>
+
+        <!-- Fila 5: Comandos del Sistema -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:id="@+id/btnSistema" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🏠 SIST" android:textColor="#000000" android:background="#00AAFF" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="toggleModoSistema"/>
+            <Button android:id="@+id/btnEstadisticas" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="📊 STATS" android:textColor="#000000" android:background="#00FF00" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="comandoStats"/>
+            <Button android:id="@+id/btnLogros" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🏆 LOGROS" android:textColor="#000000" android:background="#00FF00" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="comandoLogros"/>
+            <Button android:id="@+id/btnHabilidades" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🎯 HABIL" android:textColor="#000000" android:background="#00FF00" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="comandoHabilidades"/>
+            <Button android:id="@+id/btnMercado" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="🏴‍☠️ MERC" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="comandoMercado"/>
+            <Button android:id="@+id/btnPausa" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:text="⏸️ PAUSA" android:textColor="#000000" android:background="#FF4444" android:layout_margin="1dp" android:padding="2dp" android:textSize="10sp" android:onClick="togglePausa"/>
+
+        </LinearLayout>
+
+        <!-- Panel de Comandos Extendido (Inicialmente Oculto) -->
+        <LinearLayout
+            android:id="@+id/panelComandos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#003300"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚙️ PANEL DE COMANDOS"
+                android:textColor="#00FF00"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <!-- Compras de Habilidades -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 1" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar1"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 2" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar2"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 3" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar3"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 4" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar4"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 5" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar5"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMP 6" android:textColor="#000000" android:background="#00AA00" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprar6"/>
+
+            </LinearLayout>
+
+            <!-- Compras de Herramientas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 1" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH1"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 2" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH2"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 3" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH3"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 4" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH4"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 5" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH5"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="COMPH 6" android:textColor="#000000" android:background="#FF9900" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comprarH6"/>
+
+            </LinearLayout>
+
+            <!-- Usar Herramientas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 1" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar1"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 2" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar2"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 3" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar3"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 4" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar4"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 5" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar5"/>
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="USAR 6" android:textColor="#000000" android:background="#FF6600" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="usar6"/>
+
+            </LinearLayout>
+
+            <!-- FASE 5.4: Reputación -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <Button android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:text="🌐 REP" android:textColor="#000000" android:background="#AA00FF" android:layout_margin="1dp" android:padding="1dp" android:textSize="9sp" android:onClick="comandoReputacion"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

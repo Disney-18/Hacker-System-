@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema principal de la aplicación -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textColorPrimary">@color/hacker_green</item>
+        <item name="android:textColorSecondary">@color/hacker_green</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- Estilo para textos de terminal -->
+    <style name="TerminalText">
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+    
+    <!-- Estilo para textos pequeños de terminal -->
+    <style name="TerminalTextSmall">
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    
+    <!-- Estilo para botones de hacker -->
+    <style name="HackerButton">
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:background">@color/dark_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para botones primarios (verdes) -->
+    <style name="HackerButtonPrimary">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/hacker_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para botones de peligro (rojos) -->
+    <style name="HackerButtonDanger">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/hacker_red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para botones de advertencia (amarillos) -->
+    <style name="HackerButtonWarning">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/hacker_yellow</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para botones de información (azules) -->
+    <style name="HackerButtonInfo">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/hacker_blue</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para encabezados de sección -->
+    <style name="SectionHeader">
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/darker_green</item>
+    </style>
+    
+    <!-- Estilo para subtítulos -->
+    <style name="Subtitle">
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    
+    <!-- Estilo para paneles de contenido -->
+    <style name="ContentPanel">
+        <item name="android:background">@color/black</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para áreas de texto de salida -->
+    <style name="OutputArea">
+        <item name="android:background">@color/dark_green</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    
+    <!-- Estilo para campos de entrada -->
+    <style name="InputField">
+        <item name="android:background">@color/darker_green</item>
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    
+    <!-- Estilo para tabs activos -->
+    <style name="ActiveTab">
+        <item name="android:background">@color/hacker_green</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- Estilo para tabs inactivos -->
+    <style name="InactiveTab">
+        <item name="android:background">@color/dark_green</item>
+        <item name="android:textColor">@color/hacker_green</item>
+    </style>
+    
+    <!-- Estilo para la barra de estado -->
+    <style name="StatusBar">
+        <item name="android:background">@color/dark_green</item>
+        <item name="android:textColor">@color/hacker_green</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    
+    <!-- Estilo para power-ups -->
+    <style name="PowerUp">
+        <item name="android:textSize">10sp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+    
+    <!-- Estilo para estadísticas en tiempo real -->
+    <style name="RealTimeStats">
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/darker_green</item>
+        <item name="android:textColor">@color/hacker_green</item>
+    </style>
+</resources>

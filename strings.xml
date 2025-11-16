@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Hacker System</string>
+    
+    <!-- Nombres de las pestañas -->
+    <string name="tab_terminal">🎮 TERMINAL</string>
+    <string name="tab_scanner">🔍 ESCÁNER</string>
+    <string name="tab_crypto">🔓 CRIPTO</string>
+    <string name="tab_web">🌐 WEB</string>
+    <string name="tab_traffic">📡 TRÁFICO</string>
+    <string name="tab_firewall">🛡️ FIREWALL</string>
+    <string name="tab_files">💾 ARCHIVOS</string>
+    <string name="tab_missions">📊 MISIONES</string>
+    <string name="tab_about">ℹ️ ACERCA</string>
+    
+    <!-- Mensajes del sistema -->
+    <string name="system_online">🟢 ONLINE</string>
+    <string name="system_offline">🔴 OFFLINE</string>
+    <string name="system_connected">CONECTADO</string>
+    <string name="system_disconnected">DESCONECTADO</string>
+    
+    <!-- Botones y acciones -->
+    <string name="btn_start">🚀 INICIAR</string>
+    <string name="btn_stop">⏹️ DETENER</string>
+    <string name="btn_scan">🔍 ESCANEAR</string>
+    <string name="btn_encrypt">🔒 CIFRAR</string>
+    <string name="btn_decrypt">🔓 DESCIFRAR</string>
+    <string name="btn_clear">🗑️ LIMPIAR</string>
+    <string name="btn_analyze">🔍 ANALIZAR</string>
+    <string name="btn_add_rule">➕ REGLA</string>
+    <string name="btn_show_rules">📋 REGLAS</string>
+    <string name="btn_new_mission">🎯 NUEVA</string>
+    <string name="btn_complete_mission">✅ COMPLETAR</string>
+    <string name="btn_show_missions">📋 LISTAR</string>
+    
+    <!-- Títulos de módulos -->
+    <string name="title_terminal">TERMINAL DE HACKING</string>
+    <string name="title_scanner">ESCÁNER DE RED</string>
+    <string name="title_crypto">CRIPTOANÁLISIS</string>
+    <string name="title_web">EXPLORADOR WEB</string>
+    <string name="title_traffic">MONITOR DE TRÁFICO</string>
+    <string name="title_firewall">SISTEMA FIREWALL</string>
+    <string name="title_files">GESTOR DE ARCHIVOS</string>
+    <string name="title_missions">PANEL DE MISIONES</string>
+    <string name="title_about">ACERCA DEL SISTEMA</string>
+    
+    <!-- Mensajes de estado -->
+    <string name="status_ready">Listo para operar</string>
+    <string name="status_scanning">Escaneando red…</string>
+    <string name="status_encrypting">Cifrando datos…</string>
+    <string name="status_browsing">Navegando anónimamente…</string>
+    <string name="status_monitoring">Monitoreando tráfico…</string>
+    <string name="status_protected">Sistema protegido</string>
+    
+    <!-- Textos de interfaz -->
+    <string name="hint_input_text">Ingresa texto para cifrar/descifrar…</string>
+    <string name="label_output">📊 SALIDA:</string>
+    <string name="label_devices">📊 DISPOSITIVOS DETECTADOS:</string>
+    <string name="label_logs">📊 LOGS DE NAVEGACIÓN:</string>
+    <string name="label_packets">📊 PAQUETES CAPTURADOS:</string>
+    <string name="label_firewall_logs">📊 LOGS DEL FIREWALL:</string>
+    <string name="label_file_system">📊 SISTEMA DE ARCHIVOS:</string>
+    <string name="label_active_missions">🎯 MISIONES ACTIVAS:</string>
+    <string name="label_system_info">📄 INFORMACIÓN DEL SISTEMA:</string>
+    
+    <!-- Descripciones de módulos -->
+    <string name="desc_scanner">Descubrimiento de Dispositivos | Análisis de Puertos | Seguridad</string>
+    <string name="desc_crypto">Sistema: Cifrado César ROT13 | Base64 | MD5</string>
+    <string name="desc_web">TOR Simulation | Proxy 7 Capas | User Agent Spoofing</string>
+    <string name="desc_traffic">Captura de Paquetes | Análisis en Tiempo Real | Detección de Intrusos</string>
+    <string name="desc_firewall">Protección en Tiempo Real | Reglas Personalizables | Detección de Intrusos</string>
+    <string name="desc_files">Sistema EXT4 | Cifrado AES-256 | Gestión Segura</string>
+    <string name="desc_missions">Contratos de Hacking | Objetivos Especiales | Sistema de Recompensas</string>
+    <string name="desc_about">Información | Créditos | Características | Versión</string>
+    
+    <!-- Mensajes del terminal -->
+    <string name="msg_welcome">> INICIANDO SECUENCIA DE HACKEO…\n> SISTEMA OPERATIVO: HACKER v8.0\n> CARGANDO MÓDULOS…</string>
+    <string name="msg_scanner_ready">🔍 SISTEMA DE ESCANEO DE RED\n> Listo para escanear…\n</string>
+    <string name="msg_crypto_ready">🔓 SISTEMA DE CRIPTOANÁLISIS ACTIVADO\n> Cifrado César (ROT13) listo\n> Base64 disponible\n> Hash MD5 simulado\n</string>
+    <string name="msg_web_ready">🌐 EXPLORADOR WEB ANÓNIMO ACTIVADO\n> TOR Simulation: ACTIVADO\n> Proxy: 7 capas configurado\n> User Agent: Firefox/Linux\n</string>
+    <string name="msg_traffic_ready">📡 MONITOR DE TRÁFICO ACTIVADO\n> Capturando paquetes…\n> Análisis en tiempo real\n</string>
+    <string name="msg_firewall_ready">🛡️ SISTEMA DE FIREWALL ACTIVADO\n> Reglas cargadas: 6\n> Estado: INACTIVO\n</string>
+    <string name="msg_files_ready">💾 GESTOR DE ARCHIVOS DEL SISTEMA\n> Sistema de archivos: EXT4\n> Espacio libre: 1.2 TB\n> Archivos detectados: 8\n</string>
+    <string name="msg_missions_ready">📊 PANEL DE MISIONES ACTIVADO\n> Sistema de contratos cargado\n> Misiones disponibles: 3\n</string>
+    
+    <!-- Textos de créditos -->
+    <string name="credits_developer">Equipo Hacker Terminal Pro</string>
+    <string name="credits_leader">[Tu Nombre Aquí]</string>
+    <string name="credits_thanks">Comunidad de Ethical Hacking</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📡 MONITOR DE TRÁFICO"
+        android:textColor="#00FF00"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#002200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Captura de Paquetes | Análisis en Tiempo Real | Detección de Intrusos"
+        android:textColor="#00FF00"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="8dp">
+
+        <Button
+            android:id="@+id/btnStartMonitor"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🚀 INICIAR"
+            android:textColor="#000000"
+            android:background="#00FF00"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnStopMonitor"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="⏹️ DETENER"
+            android:textColor="#000000"
+            android:background="#FF4444"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnAnalyze"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🔍 ANALIZAR"
+            android:textColor="#000000"
+            android:background="#00AAFF"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 PAQUETES CAPTURADOS:"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#001100"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/trafficOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

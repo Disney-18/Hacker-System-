@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- Encabezado del Sistema -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🖥️ HACKER SYSTEM 🖥️"
+            android:textColor="#00FF00"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema Operativo: Conectado | Estado: 🟢 Online"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Barra de Navegación de Tabs - ACTUALIZADA CON AYUDA -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#002200"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Tab 1: Terminal -->
+            <Button
+                android:id="@+id/tabTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🎮 TERMINAL"
+                android:textColor="#00FF00"
+                android:background="#00AA00"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 2: Scanner -->
+            <Button
+                android:id="@+id/tabScanner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🔍 ESCÁNER"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 3: Crypto -->
+            <Button
+                android:id="@+id/tabCrypto"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🔓 CRIPTO"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 4: Web -->
+            <Button
+                android:id="@+id/tabWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🌐 WEB"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 5: Traffic -->
+            <Button
+                android:id="@+id/tabTraffic"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="📡 TRÁFICO"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 6: Firewall -->
+            <Button
+                android:id="@+id/tabFirewall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🛡️ FIREWALL"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 7: Files -->
+            <Button
+                android:id="@+id/tabFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="💾 ARCHIVOS"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 8: Missions -->
+            <Button
+                android:id="@+id/tabMissions"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="📊 MISIONES"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- ✅ NUEVO TAB 9: Ayuda/Tutorial -->
+            <Button
+                android:id="@+id/tabTutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="❓ AYUDA"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+            <!-- Tab 10: About (ahora es el tab 10) -->
+            <Button
+                android:id="@+id/tabAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="ℹ️ ACERCA"
+                android:textColor="#00FF00"
+                android:background="#001100"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Contenedor donde se muestran los fragments -->
+    <LinearLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"/>
+
+</LinearLayout>

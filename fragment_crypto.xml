@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔓 CRIPTOANÁLISIS AVANZADO"
+        android:textColor="#00FF00"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#002200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema: Cifrado César ROT13 | Base64 | MD5"
+        android:textColor="#00FF00"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="4dp"/>
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginVertical="8dp"
+        android:background="#002200"
+        android:textColor="#00FF00"
+        android:hint="Ingresa texto para cifrar/descifrar..."
+        android:padding="12dp"
+        android:gravity="top"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🔒 CIFRAR"
+            android:textColor="#000000"
+            android:background="#00FF00"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnDecrypt"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🔓 DESCIFRAR"
+            android:textColor="#000000"
+            android:background="#00AAFF"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🗑️ LIMPIAR"
+            android:textColor="#000000"
+            android:background="#FF4444"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 SALIDA:"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#001100"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/cryptoOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

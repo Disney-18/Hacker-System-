@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛡️ SISTEMA FIREWALL"
+        android:textColor="#00FF00"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#002200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protección en Tiempo Real | Reglas Personalizables | Detección de Intrusos"
+        android:textColor="#00FF00"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="8dp">
+
+        <Button
+            android:id="@+id/btnStartFirewall"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🚀 ACTIVAR"
+            android:textColor="#000000"
+            android:background="#00FF00"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnStopFirewall"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="⏹️ DESACTIVAR"
+            android:textColor="#000000"
+            android:background="#FF4444"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="4dp">
+
+        <Button
+            android:id="@+id/btnAddRule"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="➕ REGLA"
+            android:textColor="#000000"
+            android:background="#00AAFF"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnShowRules"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="📋 REGLAS"
+            android:textColor="#000000"
+            android:background="#FF9900"
+            android:layout_margin="4dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 LOGS DEL FIREWALL:"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#001100"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#001100"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/firewallOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

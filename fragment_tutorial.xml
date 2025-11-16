@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#001100"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/tutorialContentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- PÁGINA 1: BIENVENIDA -->
+            <LinearLayout
+                android:id="@+id/pageWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🖥️ BIENVENIDO, HACKER"
+                    android:textColor="#00FF00"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu misión: convertirte en una leyenda del underground cibernético"
+                    android:textColor="#00FF00"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Este tutorial te guiará en 5 minutos para dominar el sistema"
+                    android:textColor="#00AA00"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="40dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ RECUERDA: Esto es una SIMULACIÓN educativa"
+                    android:textColor="#FFFF00"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="#330000"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <!-- PÁGINA 2: TERMINAL -->
+            <LinearLayout
+                android:id="@+id/pageTerminal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎮 MÓDULO TERMINAL"
+                    android:textColor="#00FF00"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Aquí GANAS DINERO hackeando bancos virtuales\n• Usa el teclado para escribir contraseñas\n• Cada hack exitoso = +💰 DÓLARES\n• Tiempo limitado por nivel"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 ESTRATEGIA:\nCompleta los 5 niveles para ganar máximo dinero"
+                    android:textColor="#00AAFF"
+                    android:textSize="13sp"
+                    android:background="#002233"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <!-- PÁGINA 3: ECONOMÍA -->
+            <LinearLayout
+                android:id="@+id/pageEconomy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💰 SISTEMA ECONÓMICO"
+                    android:textColor="#00FF00"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💵 DÓLARES:\n• Ganancias principales del juego\n• Compran mejoras y herramientas\n• Fáciles de conseguir"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₿ CRIPTOMONEDAS:\n• Bitcoin, Ethereum, Litecoin\n• Bonuses especiales en misiones\n• Se acumulan como inversión\n• Aumentan tu VALOR TOTAL"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💡 CONSEJO:\nEnfócate en dólares al principio, cripto viene después"
+                    android:textColor="#FF9900"
+                    android:textSize="13sp"
+                    android:background="#332200"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <!-- PÁGINA 4: MÓDULOS -->
+            <LinearLayout
+                android:id="@+id/pageModules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔧 MÓDULOS ESPECIALIZADOS"
+                    android:textColor="#00FF00"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔍 SCANNER:\nEncuentra dispositivos en redes simuladas"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔓 CRYPTO:\nDescifra mensajes con sistema ROT13"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌐 WEB:\nNavegación anónima con TOR simulado"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📡 TRÁFICO:\nAnaliza paquetes de red en tiempo real"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🛡️ FIREWALL:\nProtege tu sistema de ataques"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💾 ARCHIVOS:\nGestiona sistema de archivos virtual"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📊 MISIONES:\nContratos con recompensas en dinero"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <!-- PÁGINA 5: PROGRESO -->
+            <LinearLayout
+                android:id="@+id/pageProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 SISTEMA DE PROGRESO"
+                    android:textColor="#00FF00"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔓 HABILIDADES:\n• HACKING: +Tiempo e intentos\n• STEALTH: Multiplicador de dinero\n• CRYPTO: Bonus en criptomonedas"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📈 RANGOS:\nNovato → Aprendiz → Experto → Élite → Maestro → Leyenda"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🛠️ HERRAMIENTAS:\nSe desbloquean al subir de rango\nMejoran tus capacidades de hacking"
+                    android:textColor="#00FF00"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 ESTRATEGIA:\nMejora HACKING primero para más intentos"
+                    android:textColor="#00AAFF"
+                    android:textSize="13sp"
+                    android:background="#002233"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <!-- PÁGINA 6: FINAL -->
+            <LinearLayout
+                android:id="@+id/pageFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚀 ¡ESTÁS LISTO!"
+                    android:textColor="#00FF00"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ahora conoces los secretos del sistema. Tu journey como hacker comienza ahora."
+                    android:textColor="#00FF00"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💡 RECUERDA:\n• Gana dinero en TERMINAL\n• Gasta en mejoras\n• Explora todos los módulos\n• Disfruta el aprendizaje"
+                    android:textColor="#00AA00"
+                    android:textSize="14sp"
+                    android:background="#002200"
+                    android:padding="12dp"
+                    android:layout_marginBottom="40dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¡Que el código te acompañe! 🖥️"
+                    android:textColor="#FFFF00"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- BARRA INFERIOR: NAVEGACIÓN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#002200"
+        android:padding="8dp">
+
+        <!-- INDICADOR DE PÁGINA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/pageIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/6"
+                android:textColor="#00FF00"
+                android:textSize="12sp"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+        <!-- BOTONES DE NAVEGACIÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="⬅️ ANTERIOR"
+                android:textColor="#000000"
+                android:background="#666666"
+                android:layout_margin="4dp"
+                android:textSize="12sp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="🚀 SALTAR"
+                android:textColor="#000000"
+                android:background="#FF9900"
+                android:layout_margin="4dp"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="SIGUIENTE ➡️"
+                android:textColor="#000000"
+                android:background="#00FF00"
+                android:layout_margin="4dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
